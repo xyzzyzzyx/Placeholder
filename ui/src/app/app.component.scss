@@ -1,0 +1,38 @@
+:host {
+  height: 100%;
+  width: 100%;
+
+  .ui-drawer-container {
+    height: 100%;
+
+    .ui-drawer {
+      width: 20%;
+    }
+
+    .ui-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .ui-header,
+      .ui-nav {
+        .ui-spacer {
+          flex: 1 1 auto;
+        }
+      }
+
+      .ui-content {
+        display: block;
+        flex: 1 0 auto;
+      }
+
+      .ui-footer {
+        flex-shrink: 0;
+
+        .mat-toolbar {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

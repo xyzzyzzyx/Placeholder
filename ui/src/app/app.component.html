@@ -1,0 +1,27 @@
+<mat-drawer-container class="ui-drawer-container" autosize>
+  <mat-drawer class="ui-drawer" #drawer mode="side" opened></mat-drawer>
+  <mat-drawer-content>
+    <div class="ui-container">
+      <header class="ui-header">
+        <mat-toolbar color="accent">
+          <span class="ui-spacer"></span>
+          <a mat-button [routerLink]="['/about']">About</a>
+        </mat-toolbar>
+      </header>
+      <nav class="ui-nav">
+        <mat-toolbar color="primary">
+          <a mat-button [routerLink]="['/']">Splash</a>
+          <span class="ui-spacer"></span>
+        </mat-toolbar>
+      </nav>
+      <main class="ui-content">
+        <router-outlet></router-outlet>
+      </main>
+      <footer class="ui-footer">
+        <mat-toolbar color="primary">
+          <span>&#169; Axiom Informatics Technology LLC</span>
+        </mat-toolbar>
+      </footer>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

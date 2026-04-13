@@ -1,0 +1,15 @@
+<ng-container *ngIf="state | async; let state">
+  <h1>{{ state.header }}</h1>
+  <p>{{ state.paragraph }}</p>
+
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <div>
+      <label for="file">Choose a file:</label>
+      <input type="file" id="file" name="file" required>
+    </div>
+    <div>
+      <button type="submit">Upload</button>
+    </div>
+  </form>
+
+</ng-container>

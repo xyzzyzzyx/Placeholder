@@ -1,0 +1,116 @@
+2026-04-13T11:31:31.293-05:00  INFO 26788 --- [restartedMain] tech.axiominfo.ServiceApplication        : Starting ServiceApplication using Java 21.0.10 with PID 26788 (C:\Users\William\Development\Placeholder\service\target\classes started by willi in C:\Users\William\Development\Placeholder\service)
+2026-04-13T11:31:31.298-05:00  INFO 26788 --- [restartedMain] tech.axiominfo.ServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-13T11:31:31.336-05:00  INFO 26788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-13T11:31:31.336-05:00  INFO 26788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-13T11:31:32.046-05:00  INFO 26788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-13T11:31:32.047-05:00  INFO 26788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2026-04-13T11:31:32.058-05:00  INFO 26788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2026-04-13T11:31:32.062-05:00  INFO 26788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-13T11:31:32.062-05:00  INFO 26788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-13T11:31:32.068-05:00  INFO 26788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-04-13T11:31:32.622-05:00  INFO 26788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2026-04-13T11:31:32.633-05:00  INFO 26788 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-13T11:31:32.633-05:00  INFO 26788 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2026-04-13T11:31:32.668-05:00  INFO 26788 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-13T11:31:32.668-05:00  INFO 26788 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1331 ms
+2026-04-13T11:31:32.776-05:00 DEBUG 26788 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2026-04-13T11:31:32.901-05:00  INFO 26788 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-13T11:31:33.017-05:00  INFO 26788 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:AZ user=SERVICE
+2026-04-13T11:31:33.017-05:00  INFO 26788 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-13T11:31:33.048-05:00  INFO 26788 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:AZ (H2 2.2)
+2026-04-13T11:31:33.048-05:00  WARN 26788 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-04-13T11:31:33.058-05:00  INFO 26788 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-04-13T11:31:33.058-05:00  INFO 26788 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.003s)
+2026-04-13T11:31:33.058-05:00  WARN 26788 --- [restartedMain] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2026-04-13T11:31:33.064-05:00  INFO 26788 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-04-13T11:31:33.087-05:00  INFO 26788 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-04-13T11:31:33.087-05:00  INFO 26788 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2026-04-13T11:31:33.152-05:00  INFO 26788 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-13T11:31:33.187-05:00  INFO 26788 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-04-13T11:31:33.211-05:00  INFO 26788 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-13T11:31:33.396-05:00  INFO 26788 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-13T11:31:33.640-05:00  INFO 26788 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-13T11:31:33.646-05:00  INFO 26788 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-13T11:31:33.921-05:00  INFO 26788 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/api/actuator'
+2026-04-13T11:31:34.178-05:00  INFO 26788 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-04-13T11:31:34.217-05:00 DEBUG 26788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2026-04-13T11:31:34.287-05:00 DEBUG 26788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /api/swagger-ui*/*swagger-initializer.js, /api/swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2026-04-13T11:31:34.317-05:00 DEBUG 26788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-04-13T11:31:34.347-05:00 DEBUG 26788 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 3 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-04-13T11:31:34.371-05:00 DEBUG 26788 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 3 @ExceptionHandler, 0 ResponseBodyAdvice
+2026-04-13T11:31:34.777-05:00  INFO 26788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-13T11:31:34.848-05:00  INFO 26788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path '/'
+2026-04-13T11:31:34.856-05:00  INFO 26788 --- [restartedMain] tech.axiominfo.ServiceApplication        : Started ServiceApplication in 3.868 seconds (process running for 4.163)
+2026-04-13T11:32:51.566-05:00  INFO 26788 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-13T11:32:51.567-05:00  INFO 26788 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-13T11:32:51.567-05:00 DEBUG 26788 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-04-13T11:32:51.567-05:00 DEBUG 26788 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-04-13T11:32:51.567-05:00 DEBUG 26788 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-04-13T11:32:51.568-05:00 DEBUG 26788 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@14a48b76
+2026-04-13T11:32:51.569-05:00 DEBUG 26788 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1ee418a1
+2026-04-13T11:32:51.569-05:00 DEBUG 26788 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-04-13T11:32:51.569-05:00  INFO 26788 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-13T11:32:51.579-05:00 DEBUG 26788 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-04-13T11:32:51.583-05:00 DEBUG 26788 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to tech.axiominfo.ServiceApplication#index()
+2026-04-13T11:32:51.620-05:00 DEBUG 26788 --- [http-nio-9000-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-04-13T11:32:51.750-05:00 DEBUG 26788 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T11:32:51.770-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/site.webmanifest", parameters={}
+2026-04-13T11:32:51.773-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-04-13T11:32:51.775-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-04-13T11:32:51.776-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler tech.axiominfo.ServiceApplication#handleException(NoResourceFoundException)
+2026-04-13T11:32:51.777-05:00  WARN 26788 --- [http-nio-9000-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource site.webmanifest.]
+2026-04-13T11:32:51.777-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="forward:/"; model={}]
+2026-04-13T11:32:51.779-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-04-13T11:32:51.780-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.w.servlet.view.InternalResourceView  : View [InternalResourceView], model {}
+2026-04-13T11:32:51.781-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/]
+2026-04-13T11:32:51.783-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/", parameters={}
+2026-04-13T11:32:51.783-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to tech.axiominfo.ServiceApplication#index()
+2026-04-13T11:32:51.783-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-04-13T11:32:51.789-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2026-04-13T11:32:51.789-05:00 DEBUG 26788 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T11:32:51.870-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon-32x32.png", parameters={}
+2026-04-13T11:32:51.872-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-04-13T11:32:51.873-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-04-13T11:32:51.873-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler tech.axiominfo.ServiceApplication#handleException(NoResourceFoundException)
+2026-04-13T11:32:51.873-05:00  WARN 26788 --- [http-nio-9000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon-32x32.png.]
+2026-04-13T11:32:51.873-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="forward:/"; model={}]
+2026-04-13T11:32:51.873-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-04-13T11:32:51.874-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.w.servlet.view.InternalResourceView  : View [InternalResourceView], model {}
+2026-04-13T11:32:51.874-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/]
+2026-04-13T11:32:51.874-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/", parameters={}
+2026-04-13T11:32:51.874-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to tech.axiominfo.ServiceApplication#index()
+2026-04-13T11:32:51.874-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-04-13T11:32:51.877-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2026-04-13T11:32:51.878-05:00 DEBUG 26788 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T11:33:04.728-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon-32x32.png", parameters={}
+2026-04-13T11:33:04.729-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-04-13T11:33:04.731-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-04-13T11:33:04.731-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler tech.axiominfo.ServiceApplication#handleException(NoResourceFoundException)
+2026-04-13T11:33:04.731-05:00  WARN 26788 --- [http-nio-9000-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon-32x32.png.]
+2026-04-13T11:33:04.731-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="forward:/"; model={}]
+2026-04-13T11:33:04.731-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-04-13T11:33:04.731-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.w.servlet.view.InternalResourceView  : View [InternalResourceView], model {}
+2026-04-13T11:33:04.731-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/]
+2026-04-13T11:33:04.731-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/", parameters={}
+2026-04-13T11:33:04.732-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to tech.axiominfo.ServiceApplication#index()
+2026-04-13T11:33:04.732-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-04-13T11:33:04.735-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2026-04-13T11:33:04.735-05:00 DEBUG 26788 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T11:33:06.056-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon-32x32.png", parameters={}
+2026-04-13T11:33:06.057-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-04-13T11:33:06.058-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-04-13T11:33:06.058-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler tech.axiominfo.ServiceApplication#handleException(NoResourceFoundException)
+2026-04-13T11:33:06.058-05:00  WARN 26788 --- [http-nio-9000-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon-32x32.png.]
+2026-04-13T11:33:06.058-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="forward:/"; model={}]
+2026-04-13T11:33:06.058-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-04-13T11:33:06.058-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.w.servlet.view.InternalResourceView  : View [InternalResourceView], model {}
+2026-04-13T11:33:06.058-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/]
+2026-04-13T11:33:06.058-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/", parameters={}
+2026-04-13T11:33:06.059-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to tech.axiominfo.ServiceApplication#index()
+2026-04-13T11:33:06.059-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-04-13T11:33:06.062-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2026-04-13T11:33:06.062-05:00 DEBUG 26788 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T11:34:57.036-05:00  INFO 26788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-13T11:34:57.040-05:00  WARN 26788 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2026-04-13T11:34:57.041-05:00  INFO 26788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-13T11:34:57.042-05:00  INFO 26788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

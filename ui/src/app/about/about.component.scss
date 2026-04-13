@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  form {
+    mat-card {
+      max-width: 400px;
+      min-width: 400px;
+
+      mat-card-header,
+      mat-card-actions {
+        padding: 16px;
+      }
+
+      mat-card-actions button:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      mat-card-content {
+        margin-top: 12px;
+
+        mat-form-field {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
