@@ -3,7 +3,6 @@ package tech.axiominfo;
 import static org.apache.commons.lang3.StringUtils.wrapIfMissing;
 
 import java.io.IOException;
-
 import org.apache.tika.Tika;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -42,6 +41,12 @@ public class ServiceApplication {
         return "index";
     }
 
+    /**
+     * Handles file upload and detects the file type using Apache Tika.
+     *
+     * @param file The uploaded file.
+     * @return ResponseEntity with the result of the upload operation.
+     */
     @PostMapping("/upload")
     public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) {
         if (file.isEmpty()) {
@@ -52,7 +57,6 @@ public class ServiceApplication {
             Tika tika = new Tika();
             String detectedType = tika.detect(file.getInputStream());
 
-            // Now you can use the detectedType
             System.out.println("file name: " + file.getOriginalFilename());
             System.out.println("file type: " + detectedType);
 
@@ -60,7 +64,8 @@ public class ServiceApplication {
 
         } catch (IOException e) {
             e.printStackTrace();
-            return ResponseEntity.internalServerError().body("Failed to process file: " + e.getMessage());
+            return ResponseEntity.internalServerError()
+                .body("Failed to process file: " + e.getMessage());
         }
     }
 

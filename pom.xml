@@ -54,6 +54,12 @@
         <artifactId>native-maven-plugin</artifactId>
         <configuration>
           <skip>true</skip>
+          <buildArgs>
+            <arg>-H:-CheckToolchain</arg>
+            <arg>-H:+ReportExceptionStackTraces</arg>
+            <arg>--verbose</arg>
+            <arg>-J-Xmx8g</arg>
+          </buildArgs>
         </configuration>
       </plugin>
       <plugin>
