@@ -1,17 +1,19 @@
-import { CommonModule } from '@angular/common';
-import { Component, Inject, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  OnInit
+} from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
-import { CLIENT, Client } from '../main';
+import { Client, CLIENT } from '../main';
 
 @Component({
   selector: 'ui-root',
-  standalone: true,
   imports: [
-    CommonModule,
     MatButtonModule,
     MatSidenavModule,
     MatToolbarModule,
@@ -19,16 +21,17 @@ import { CLIENT, Client } from '../main';
     RouterOutlet,
   ],
   templateUrl: './app.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-
   title = 'ui 5';
 
-  constructor(@Inject(CLIENT) private readonly client: Client) { }
+  private readonly client: Client = inject(CLIENT);
+
+  constructor() {}
 
   ngOnInit(): void {
     console.log('Happy coding!', this.client);
   }
-
 }

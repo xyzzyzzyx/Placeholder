@@ -3,11 +3,8 @@ package tech.axiominfo;
 import static org.apache.commons.lang3.StringUtils.wrapIfMissing;
 
 import java.io.IOException;
-import java.nio.file.Files;
 
-import jakarta.annotation.PostConstruct;
 import org.apache.tika.Tika;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
